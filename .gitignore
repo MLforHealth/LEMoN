@@ -1,0 +1,12 @@
+output/
+output_main/
+results/
+data/
+*.csv
+*.pkl
+*.npy
+data
+*__pycache__*
+logs/
+slurm_logs/
+.ipynb_checkpoints
