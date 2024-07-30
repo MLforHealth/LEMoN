@@ -3,6 +3,18 @@
 ## Paper
 If you use this code in your research, please cite the following preprint:
 
+```
+@misc{zhang2024lemonlabelerrordetection,
+      title={LEMoN: Label Error Detection using Multimodal Neighbors}, 
+      author={Haoran Zhang and Aparna Balagopalan and Nassim Oufattole and Hyewon Jeong and Yan Wu and Jiacheng Zhu and Marzyeh Ghassemi},
+      year={2024},
+      eprint={2407.18941},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.18941}, 
+}
+```
+
 ## To replicate the experiments in the paper:
 
 ### Step 0: Environment and Prerequisites
