@@ -1,7 +1,7 @@
 # LEMoN: Label Error Detection using Multimodal Neighbors
 
 ## Paper
-If you use this code in your research, please cite the following paper:
+If you use this code in your research, please cite our [ICML 2025 paper](https://arxiv.org/pdf/2407.18941):
 
 ```
 @inproceedings{
