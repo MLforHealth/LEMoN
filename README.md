@@ -60,3 +60,11 @@ where:
 ### Step 3: Aggregating Results
 
 After the `lemon_all` experiment has finished running, to create Tables 2 and 3, run `notebooks/agg_results.ipynb` and `notebooks/hparam_drop.ipynb`
+
+
+## Post-publication Baseline Sensitivity Analysis (January 2026): Logit Scaling
+The CLIP Logits baseline in our paper uses temperature=1 for logit scaling, consistent with the mathematical formulation described in [Feng et al.](https://arxiv.org/abs/2408.10012). We note that [Liang et al.](https://arxiv.org/abs/2310.10463v1), who also concurrently proposed this baseline, specify temperature as a hyperparameter. In their updated version (which we observed after our publication), this is set to 0.01.
+
+We now evaluated the baseline across multiple temperature values (0.01, 0.015, 0.07, 1) and verified that our method consistently outperforms it on three out of four classification datasets. However, the magnitude of AUROC gains of our method varies: lower performance gains of 0.7% (temperature = 0.01; still significant) to over 3% (temperatures of 0.07 or 1) for label error detection over the best baseline. Thus, the degree of performance gains are somewhat sensitive to temperature scaling in this baseline.
+
+Downstream filtering performance is stable across temperatures, with low impact to observed trends in most datasets even at a temperature of 0.01. Note that CLIP Logits relies on a pre-defined set of classification labels and is therefore not a baseline for captioning datasets.
